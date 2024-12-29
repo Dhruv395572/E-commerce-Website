@@ -1,0 +1,145 @@
+body{
+    margin: 0px;
+}
+#header {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the container */
+    background-color:  rgb(205, 206, 206);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left: 0;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.logo {
+    height: 50px;
+    font-size: 28px;
+    align-items: center; 
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin-left: auto;
+    transition: right 0.3s ease;
+}
+#mobail{
+    display: none;
+    align-items: center;
+}
+
+.navtag {
+    text-decoration: none;
+    color: white;
+}
+
+.navtag:hover {
+    color: gray;
+}
+.active{
+    color: #088178;
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Cart Container */
+#cart-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#cart-container div {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cart-container img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+#cart-container h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+#cart-container p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#cart-container button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#cart-container button:hover {
+    background-color: #c0392b;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+/* Clear Cart Button */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #cart-container div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #cart-container img {
+        margin-bottom: 10px;
+    }
+}

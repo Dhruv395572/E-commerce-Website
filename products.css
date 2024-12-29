@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+}
+#header {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the container */
+    background-color:  rgb(205, 206, 206);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left: 0;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and navbar */
+    align-items: center;
+    width: 90%; /* Adjust as necessary */
+}
+
+.logo {
+    height: 50px;
+    font-size: 28px;
+    align-items: center; 
+    display: flex;
+    justify-content: space-between;   
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 15px; 
+    margin-left: auto; /* Pushes the navbar to the right */
+}
+#mobail{
+    display: none;
+    align-items: center;
+}
+
+.navtag {
+    text-decoration: none; 
+    color: black;
+}
+
+.navtag:hover {
+    color: gray;
+}
+
+.active{
+    color: #088178;
+    text-decoration: underline;
+}
+.searchbar {
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+}
+.details{
+  display: flex;
+  color: #088178;
+font-size: 18px;
+}
+.details div {
+     margin-top:10px ;
+     margin-left: 30px;
+}
+.details div div{
+     color: black;
+     font-size: 20px;
+}
+.details div div button{
+     color: black;
+     font-size: 20px;
+     background-color: white;   
+     border:0;   
+}
+.details div div button:hover {
+     color: black;
+     font-size: 20px;
+     background-color:rgba(76, 253, 0, 0.64);  
+     border: 2px solid;  
+}
+.image {
+    width: 20%; 
+    border-radius: 7px;
+    margin-left: 30px;
+    margin-top: 10px;
+    transition: transform 0.3s ease, width 0.3s ease; 
+}
+
+.image:hover {
+    transform: scale(1.2); 
+    width: 25%; 
+}
+#footer {
+    background-image: url("footer.png"); /* Background image */
+    width: 100%;
+    height: auto; /* Auto height for dynamic content */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px 80px; /* Adjust padding for spacing */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between flex items */
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    max-width: 50%; /* Limit width of the text content */
+}
+
+.email {
+    display: flex; /* Flexbox layout for email input and button */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Space between text and input */
+}
+
+.email input {
+    padding: 10px; /* Padding for input */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Space between input and button */
+    flex: 1; /* Take full width available */
+}
+.logo{
+  width: 60px;
+}
+.email button {
+    background-color: #088178; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align content to the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 20px 80px; /* Consistent padding */
+    gap: 30px; /* Add space between sections */
+    background-color: #f9f9f9; /* Optional: Light background */
+}
+
+.last div h4 {
+   color: #088178;
+   font-size: 25px; /* Fixed typo from 25xp to 25px */
+   font-weight: 600;
+   margin-bottom: 10px; /* Space below heading */
+}
+
+.last div {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.last div a {
+   text-decoration: none;
+   color: black;
+   margin: 5px 0; /* Space between links */
+}
+

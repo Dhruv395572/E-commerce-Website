@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_bag" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star_rate" />
+
+</head>
+<body>
+    <nav id="header">
+        <div class="container"> 
+            <img src="logo.png" alt="logo" class="logo">
+            <ul class="navbar" id="nav_element">
+                <li><a href="../index/index.html" class="navtag">Home</a></li>
+                <li><a href="home.html" class="navtag active">Shop</a></li>
+                <li><a href="../About/About.html" class="navtag">About</a></li>
+                <li><a href="#Blog" class="navtag">Blog</a></li>
+                <li><a href="#sell" class="navtag">Contact</a></li>
+                <li><a href="../login/login.html" class="navtag"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobail">
+           <button><i class="material-icons" id="bar">&#xe5d2;</i></button>
+            
+        </div>
+    </nav>
+    <div class="details">
+        <img src="p4.jpg" alt="product" class="image">
+        <div>
+            Lining-Shirt
+            <div>
+                Price: 20$
+            </div>
+            <div>
+                ⭐⭐⭐⭐⭐
+            </div>
+            <div>
+                Viverent Egel
+            </div>
+            <div>
+                <button onclick="addToCart('p4.jpg', 'Lining-Shirt', 20)">Add to Cart</button>
+              <button>Buy now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <div class="footer-box">
+            <h3>Sign in for update</h3>
+            <p>Update on your email, before the time</p>
+            <div class="email">
+                <input type="email" placeholder="Enter the email">
+                <button>Sign In</button>
+            </div>
+        </div>
+    </footer>
+    <footer class="last">
+        <div class="part1">
+            <img src="logo.png" alt="logo" class="logo">
+            <h4>Contect</h4>
+            <p><strong>Address:-</strong>C-17 Indupuram Mathura</p>
+            <p><strong>Phone:-</strong>+91 9557337821,+91 8630548315</p>
+            <p><strong>Hours:-</strong>10:00-5:00</p>
+        </div>
+        <div ">
+            <h4>About Us:-</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery information</a>
+            <a href="#">term and condition</a>
+            <a href="#">Contect Us</a>
+        </div>
+        <div class="part3">
+            <h4>My account:-</h4>
+            <a href="#">Sign in</a>
+            <a href="#">view cart</a>
+            <a href="#">My Wise list</a>
+            <a href="#">Track my order</a>
+        </div>
+        <script src="product.js"></script>
+</body>
+</html>
